@@ -103,7 +103,7 @@ def logsumexp(values: Sequence[float]) -> float:
     if len(values) == 0:
         return -math.inf
     m = max(values)
-    #If m is -∞, all values are -∞ and result is -∞
+    #If m is -infinity, all values are -infinity and result is -infinity
     if m == -math.inf:
         return -math.inf
     total = sum(math.exp(v - m) for v in values)
